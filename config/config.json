@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "@hamu",
+    "database": "vibanda_connect",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "@hamu",
+    "database": "vibanda_connect",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "@hamu",
+    "database": "vibanda_connect",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

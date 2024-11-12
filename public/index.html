@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibanda Delivery System</title>
+</head>
+<body>
+  <h1>Vibanda Delivery System</h1>
+
+  <!-- Vendor Section -->
+  <section id="vendor-section">
+    <h2>Vendors</h2>
+    <form id="vendorForm">
+      <input type="text" id="vendorName" placeholder="Name" required />
+      <input type="tel" id="vendorContactNumber" placeholder="Contact Number" required />
+      <input type="text" id="vendorLocation" placeholder="Location" required />
+      <input type="text" id="vendorShopName" placeholder="Shop Name" required />
+      <input type="email" id="vendorEmail" placeholder="Email" required />
+      <button type="submit">Add Vendor</button>
+    </form>
+    <button onclick="getVendors()">View All Vendors</button>
+    <div id="vendorList"></div>
+  </section>
+
+  <!-- Rider section -->
+  <section id="rider-section">
+    <h2>Riders</h2>
+    <form id="riderForm">
+      <input type="text" id="riderName" placeholder="Name" required />
+      <input type="text" id="riderContactNumber" placeholder="Contact Number" required />
+      <input type="text" id="riderVehicleType" placeholder="Vehicle Type" required />
+      <input type="text" id="riderLocation" placeholder="Location" required />
+      <label>
+        Available:
+        <input type="checkbox" id="riderAvailable" />
+      </label>
+      <button type="submit">Add Rider</button>
+    </form>
+    <button onclick="getRiders()">View All Riders</button>
+    <div id="riderList"></div>
+  </section>
+
+
+  <!-- Customer Section -->
+
+  <section id="customer-section">
+    <h2>Customers</h2>
+    <form id="customerForm">
+      <input type="text" id="customerName" placeholder="Name" required />
+      <input type="email" id="customerEmail" placeholder="Email" required />
+      <input type="tel" id="customerContactNumber" placeholder="Contact Number" required />
+      <input type="text" id="customerLocation" placeholder="Location" required />
+      <button type="submit">Add Customer</button>
+    </form>
+    <button onclick="getCustomers()">View All Customers</button>
+    <div id="customerList"></div>
+  </section>
+
+  <!-- Order Section -->
+ 
+  <!-- Order Section -->
+<section id="order-section">
+    <h2>Orders</h2>
+    <form id="orderForm">
+      <input type="text" id="orderVendorId" placeholder="Vendor ID" required />
+      <input type="text" id="orderCustomerId" placeholder="Customer ID" required />
+      <input type="text" id="orderRiderId" placeholder="Rider ID (Optional)" />
+      <input type="text" id="orderItems" placeholder="Items (comma-separated)" required />
+      <input type="text" id="orderStatus" placeholder="Status" value="Pending" required />
+      <input type="date" id="orderDeliveryDate" placeholder="Delivery Date" required /> <!-- New field -->
+      <button type="submit">Place Order</button>
+    </form>
+    <button onclick="getOrders()">View All Orders</button>
+    <div id="orderList"></div>
+  </section>
+  
+
+
+  <script src="app.js"></script>
+</body>
+</html>
